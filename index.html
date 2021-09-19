@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link src="favicon.ico" alt="">
+    <link rel="stylesheet" href="index.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+      <form action="" name="myForm" onsubmit="return validateForm()" method="POST">
+          <div class="inputdiv" id="name">
+              <label for="fname">Name</label>
+            <input type="text"  name="fname" placeholder="Name" >
+            <span class="formError"></span>
+        </div>
+        <div class="inputdiv" id="email">
+            <label for="femail">Email</label>
+            <input type="email"  name="femail" placeholder="Email" required>
+            <span class="formError"></span>
+        </div>
+        <div class="inputdiv" id="phone">
+            <label for="fphone">Number</label>
+            <input type="number"  name="fphone" placeholder="Number" >
+            <span class="formError"></span>
+        </div>
+        <div class="inputdiv" id="password">
+            <label for="fpassword">Password</label>
+            <input type="password" name="fpassword" placeholder="Password" >
+            <span class="formError"></span>
+        </div>
+        <div class="inputdiv" id="cpassword">
+            <label for="fcpassword">Confirm Password</label>
+            <input type="password" name="fcpassword" placeholder="Password">
+            <span class="formError"></span>
+        </div>
+        <div class="submitinputdiv" id="submitd">
+        <input class="btn" value="Submit" type="submit">
+    </div>
+    </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
